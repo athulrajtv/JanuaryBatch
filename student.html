@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form method="post" action="{% url 'savestn' %}" >
+  {% csrf_token %}
+  <label>Std_Name</label>
+  <input type="text" name="name"><br><br>
+  <label>Std_Age</label>
+  <input type="text" name="age"><br><br>
+  <label>Mobile</label>
+  <input type="text" name="mobile"><br><br>
+   <button type="submit">Register</button>
+</form>
+</body>
+</html>
